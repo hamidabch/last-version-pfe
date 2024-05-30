@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Internal</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="../css/style.css">
+
+   <script src="https://kit.fontawesome.com/18021a6e52.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<header class="header">
+   
+   <section class="flex">
+      <div class="links">
+      <a href="internalprof.html" class="upnavbar" ><i class="fa-solid fa-book-open-reader"></i>Propose a topic</a>
+      <a href="listTopic.html" class="upnavbar"><i class="fa-solid fa-list"></i>List of your topic</a>
+   </div>
+      
+      <div class="icons">
+         <div id="menu-btn" class="fas fa-bars"></div>
+         <div id="search-btn" class="fas fa-search"></div>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="toggle-btn" class="fas fa-sun"></div>
+      </div>
+
+      <div class="profile">
+         <img src="../images/pic-1.jpg" class="image" alt="">
+         <h3 class="name">shaikh anas</h3>
+         <p class="role">Teacher</p>
+         <div class="flex-btn">
+            <a href="profile.html" class="option-btn"> Profile</a>
+            <a href="register.html" class="option-btn">Logout</a>
+         </div>
+      </div>
+
+
+   </section>
+
+</header>   
+
+<div class="side-bar">
+
+   <div id="close-btn">
+      <i class="fas fa-times"></i>
+   </div>
+
+   <div class="profile">
+      <img src="../images/pic-1.jpg" class="image" alt="">
+      <h3 class="name">shaikh anas</h3>
+      <p class="role">Teacher</p>
+      <a href="profile.html" class="btn">view profile</a>
+   </div>
+
+   <nav class="navbar">
+      <a href="internalprof.html"><i class="fas  fa-graduation-cap"></i><span>internal</span></a>
+
+
+      
+   </nav>
+</div>
+
+<section class="form-container">
+
+   <form action="" method="post" enctype="multipart/form-data">
+      <h3>Add subject</h3>
+      <p>Title </p>
+      <input type="text" name="title" placeholder="title" required maxlength="50" class="box">
+      <p>Key-words</p>
+      <input type="text" name="key-words" placeholder="key-words" required maxlength="50" class="box">
+      <p>Summary</p>
+      <textarea  type="text" name="pass" placeholder="summary"  rows="8" class="box"></textarea>
+      <p>for</p>
+      <div class="select-container">
+         <div class="select">
+             <select name="level" id="level">
+                 <option selected disabled>Level</option>
+                 <option value="1">Licence</option>
+                 <option value="2">Master</option>
+             </select>
+         </div>
+        
+     </div>
+      <br>
+      <input type="submit" value="Add" name="submit" class="btn">
+   </form>
+
+</section>
+
+
+
+
+
+<footer class="footer">
+
+   &copy; Univ-Boumerdes @ 2024 by <span></span> | Departement Informatique
+
+</footer>
+
+
+
+
+
+<!-- custom js file link  -->
+<script src="../js/script.js"></script>
+
+   
+</body>
+</html>

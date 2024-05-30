@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>profile</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="../css/style.css">
+   <style>
+      table {
+         width: 100%;
+         border-collapse: collapse;
+         margin: 20px 0;
+         font-size: 18px;
+         text-align: left;
+      }
+      table th, table td {
+         padding: 12px;
+         border-bottom: 1px solid #ddd;
+      }
+      table th {
+         background-color: #f2f2f2;
+      }
+      table td {
+         background-color: #eee;
+      }
+   </style>
+</head>
+<body>
+
+<header class="header">
+   
+   <section class="flex">
+<div></div>
+   
+       <div class="icons">
+         <div id="menu-btn" class="fas fa-bars"></div>
+         <div id="search-btn" class="fas fa-search"></div>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="toggle-btn" class="fas fa-sun"></div>
+      </div>
+
+      <div class="profile">
+         <img src="../images/pic-1.jpg" class="image" alt="">
+         <h3 class="name">shaikh anas</h3>
+         <p class="role">Teacher</p>
+         
+         <div class="flex-btn">
+            <a href="profile.html" class="option-btn"> Profile</a>
+            <a href="register.html" class="option-btn">Logout</a>
+         </div>
+      </div>
+
+   </section>
+
+</header>   
+
+<div class="side-bar">
+
+   <div id="close-btn">
+      <i class="fas fa-times"></i>
+   </div>
+
+   <div class="profile">
+      <img src="../images/pic-1.jpg" class="image" alt="">
+      <h3 class="name">shaikh anas</h3>
+      <p class="role">Teacher</p>
+      <a href="profile.html" class="btn">view profile</a>
+   </div>
+
+   <nav class="navbar">
+      <a href="internalprof.html"><i class="fas fa-graduation-cap"></i><span>internal</span></a>
+   </nav>
+
+
+</div>
+
+<section class="user-profile">
+
+   <h1 class="heading">Your information</h1>
+
+   <div class="info">
+      <table>
+         <thead>
+            <tr>
+               <th></th>
+               <th> General information</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td><b>Nom</b></td>
+               <td><?= htmlspecialchars($result['nom']); ?></td>
+            </tr>
+            <tr>
+               <td><b>Prénom</b></td>
+               <td><?= htmlspecialchars($result['prenom']); ?></td>
+            </tr>
+            <tr>
+               <td><b>Email</b></td>
+               <td><?= htmlspecialchars($result['email']); ?></td>
+            </tr>
+         </tbody>
+      </table>
+   </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- custom js file link  -->
+<script src="../js/script.js"></script>
+
+   
+</body>
+</html>

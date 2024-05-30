@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Admin a compte </title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="../../desgin/css/style.css">
+   <style>
+      /* Style de base pour le tableau */
+      table {
+         width: 100%;
+   border-collapse: collapse;
+   margin-bottom: 2rem;
+   background-color: #fff;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   border-radius: 10px;
+   overflow: hidden;
+      }
+
+      
+      th, td {
+          padding: 12px;
+          text-align: left;
+         
+      }
+
+      th {
+         background-color: #f39c12;
+   color: #fff;
+      }
+
+     
+      tr:hover {
+          background-color: #f1f1f1;}
+
+      .edit-btn, .delete-btn {
+          padding: 6px 10px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+          font-size: 14px;
+      }
+
+      .edit-btn {
+          background-color: #007bff;
+          color: #fff;
+          margin-right: 5px;
+      }
+
+      .delete-btn {
+          background-color: #dc3545;
+          color: #fff;
+         
+      }
+
+      .edit-btn:hover {
+          background-color: #0056b3;
+      }
+
+      .delete-btn:hover {
+          background-color: #c82333;
+      }
+  </style>
+</head>
+<body>
+
+    <header class="header">
+   
+        <section class="flex">
+           <div class="links">
+              <a href="student.html"><i class="fas  fa-graduation-cap"></i><span>Student</span></a>
+              <a href="teacher.html"><i class="fas fa-chalkboard-teacher"></i><span>Teachers</span></a>
+              <a href="admin.html"><i class="fas fa-user-shield"></i><span>Admins</span></a>
+        </div>
+           
+           <div class="icons">
+              <div id="menu-btn" class="fas fa-bars"></div>
+              <div id="search-btn" class="fas fa-search"></div>
+              <div id="user-btn" class="fas fa-user"></div>
+              <div id="toggle-btn" class="fas fa-sun"></div>
+           </div>
+     
+           <div class="profile">
+            <img src="../images/pic-1.jpg" class="image" alt="">
+            <h3 class="name">shaikh anas</h3>
+            <p class="role">Admin</p>
+            <div class="flex-btn">
+                <a href="profile.html" class="option-btn"> Profile</a>
+                <a href="register.html" class="option-btn">Logout</a>
+             </div>
+            </div>
+         </div>
+   
+     
+        </section>
+     
+     </header>   
+  
+     <div class="side-bar">
+
+      <div id="close-btn">
+         <i class="fas fa-times"></i>
+      </div>
+   
+      <div class="profile">
+         <img src="../images/pic-1.jpg" class="image" alt="">
+         <h3 class="name">shaikh anas</h3>
+         <p class="role">Admin</p>
+         <a href="profile.html" class="btn">view profile</a>
+      </div>
+   
+      <nav class="navbar">
+         <a href="student.html"><i class="fa-solid fa-gears"></i><span>Manage accounts</span></a>
+         <a href="bachelor.html"><i class="fas  fa-graduation-cap"></i><span>bachelor</span></a>
+         <a href="master.html"><i class="fas fa-graduation-cap"></i><span>Master</span></a>
+   
+         
+      </nav>
+   
+   </div>
+
+<section class="teachers">
+
+
+   <div class="box-container">
+
+      <div class="box offer">
+         <h3>Admin accounts </h3>
+         <section class="manage-accounts">
+            
+            <table>
+                <thead>
+                    <tr>
+                       
+                        <th>First Name</th>
+                        <th>Second Name</th>
+                        <th>Email</th>
+                        <th>Password</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="student-table-body">
+                    <!-- Lignes du tableau générées dynamiquement -->
+                    <tr>
+                        
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <button class="edit-btn">Edit</button>
+                            <button class="delete-btn">Delete</button>
+                        </td>
+                    </tr>
+                   
+                </tbody>
+            </table>
+        </section>
+        
+        <script>
+            // Fonction pour ajouter une ligne au tableau
+            function addStudentRow(First_name, second_name,email, password) {
+                var tableBody = document.getElementById('student-table-body');
+                var newRow = tableBody.insertRow();
+                newRow.innerHTML = `<td>${First_name}</td><td>${second_name}</td><td>${email}</td><td>${password}</td><td><button class="edit-btn">Edit</button><button class="delete-btn">Delete</button></td>`;
+            }
+        
+            // Exemple d'ajout d'un nouvel étudiant (à remplacer par la logique de votre application)
+            // Ajoutez cette ligne chaque fois qu'un étudiant s'inscrit
+          
+        </script>
+        
+         
+      </div>
+
+      
+     
+   </div>
+</section>
+
+
+
+
+
+
+
+
+
+<div></div>
+
+
+
+
+<!-- custom js file link  -->
+<script src="../../desgin/js/script.js"></script>
+
+   
+</body>
+</html>
